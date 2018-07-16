@@ -14,6 +14,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
+          'style-loader',
           'css-loader'
         ],
       },
@@ -73,7 +74,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    extensions: ['*', '.js', '.vue', '.json'],
   },
   devServer: {
     historyApiFallback: true,
