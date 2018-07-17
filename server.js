@@ -11,7 +11,6 @@ app.get('/',(req,res)=>{
   res.write('index.html');
 });
 
-
 app.listen(port,()=>{
   console.log(`Server is up on port ${port}`);
 });
